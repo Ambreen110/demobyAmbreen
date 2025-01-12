@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url("/slider/slider1.jpg");
+    background-color: rgb(228, 225, 225);
     background-size: cover;
     background-position: center;
     height: 70vh;
