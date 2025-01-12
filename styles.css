@@ -1,0 +1,273 @@
+/* Reset and Base Styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EBEFE3;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #577329;
+    color: #EBEFE3;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #EBEFE3;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #95B757;
+}
+
+/* Slider Section */
+.slider {
+    position: relative;
+    max-width: 90%;
+    margin: 20px auto; /* Center the slider horizontally and add some vertical margin */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("/slider/slider1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #577329;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #95B757;
+    padding: 10px 30px;
+    color: #EBEFE3;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero button:hover {
+    background-color: #577329;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.left {
+    flex: 2;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.left h2 {
+    font-size: 2.2rem;
+    color: #577329;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.left img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.news-section, .subscribe {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h3, .subscribe h3 {
+    font-size: 2rem;
+    color: #577329;
+}
+
+.news-section ul {
+    margin-top: 15px;
+}
+
+.news-section ul li {
+    margin-bottom: 10px;
+}
+
+.subscribe form {
+    display: flex;
+    gap: 15px;
+}
+
+.subscribe input[type="email"] {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 1rem;
+}
+
+.subscribe button {
+    background-color: #577329;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #95B757;
+}
+
+/* Comments Section */
+.comments {
+    background-color: #577329;
+    color: white;
+    padding: 40px 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.comments h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #95B757;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #577329;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin: 0 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+footer nav ul li a:hover {
+    color: #95B757;
+}
